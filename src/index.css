@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes fluidDash {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+.fluid-flow-line {
+  animation: fluidDash 0.8s linear infinite;
+}
+
+.fluid-flow-line-reverse {
+  animation: fluidDash 0.8s linear infinite reverse;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fluid-flow-line,
+  .fluid-flow-line-reverse {
+    animation: none;
+  }
+}

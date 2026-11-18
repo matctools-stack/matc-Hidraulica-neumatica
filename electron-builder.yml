@@ -1,0 +1,28 @@
+appId: app.fluidcircuitstudio.desktop
+productName: Fluid Circuit Studio
+directories:
+  output: dist-desktop
+  buildResources: public
+files:
+  - dist/**/*
+  - '!dist/assets/aistudio/**'
+  - '!dist/fluid-circuit-studio-windows.zip'
+  - electron/**/*
+  - package.json
+win:
+  icon: public/pwa-512x512.png
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  artifactName: FluidCircuitStudio-Setup-${version}.${ext}
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+portable:
+  artifactName: FluidCircuitStudio-Portable-${version}.${ext}

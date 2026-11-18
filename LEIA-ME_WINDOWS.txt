@@ -1,0 +1,27 @@
+FLUID CIRCUIT STUDIO — PACOTE COMPLETO WINDOWS (.EXE)
+====================================================
+
+1. EXTRAIR O ARQUIVO ZIP
+   Extraia todo o conteudo deste ZIP para uma pasta no seu computador,
+   por exemplo: C:\Projetos\fluid-circuit-studio
+   (Nao execute diretamente de dentro do ZIP nem de C:\WINDOWS\system32.)
+
+2. GERAR O EXECUTAVEL (.EXE) AUTOMATICAMENTE
+   De dois cliques no arquivo:
+     GERAR_EXE_WINDOWS.bat
+
+   Ao concluir, a pasta "dist-desktop" abrira automaticamente com:
+     - FluidCircuitStudio-Setup-1.0.0.exe   (Instalador completo)
+     - FluidCircuitStudio-Portable-1.0.0.exe (Versao portatil)
+
+   Requisito unico: Node.js 18 ou superior (https://nodejs.org/).
+
+3. ABRIR DIRETO EM JANELA DESKTOP (OPCIONAL)
+   Se preferir abrir o simulador imediatamente em janela desktop
+   sem gerar instalador, de dois cliques em:
+     EXECUTAR_DESKTOP_SEM_COMPILAR.bat
+
+4. PERSISTENCIA LOCAL E ACESSO OFFLINE
+   - Os circuitos salvos e o log de auditoria ficam gravados em:
+     %APPDATA%\FluidCircuitStudio\fluid-vault
+   - O controle de acesso offline funciona 100% sem internet.

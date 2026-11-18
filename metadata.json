@@ -1,0 +1,6 @@
+{
+  "name": "Fluid Circuit Studio",
+  "description": "Simulador desktop e web de circuitos hidráulicos e pneumáticos com controle de acesso offline e persistência de dados local.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
